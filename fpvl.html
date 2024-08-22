@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Federação Portuguesa de Voo Livre, Asa Delta, Parapente e Paramotor em Portugal.">
+    <meta name="keywords" content="Voo Livre, Asa Delta, Parapente, Paramotor, Portugal, Esportes Aéreos">
+    <meta name="author" content="Kinga Brynczka">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Federação Portuguesa de Voo Livre, Asa Delta, Parapente e Paramotor</title>
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Ícone do site -->
+    <link rel="icon" href="imgs/favicon.png" sizes="16x16" type="image/x-icon">
+
+    <!-- Meta tags para o Facebook -->
+    <meta property="og:title" content="Federação Portuguesa de Voo Livre, Asa Delta, Parapente e Paramotor">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="URL do seu site">
+    <meta property="og:image" content="URL da imagem do seu site">
+    
+    <!-- Meta tags para o Twitter -->
+    <meta name="twitter:title" content="Federação Portuguesa de Voo Livre, Asa Delta, Parapente e Paramotor">
+    <meta name="twitter:description" content="Federação Portuguesa de Voo Livre, Asa Delta, Parapente e Paramotor em Portugal.">
+    <meta name="twitter:image" content="URL da imagem do seu site">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item logo">
+            <img src="imgs/logo_federacao.png" alt="Logo da Federação">
+        </div>
+        <div class="grid-item titulo">
+            <h2>Federação Portuguesa de Voo Livre, Asa Delta, Parapente e Paramotor</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="fpvl.html">FPVL</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+        <div class="formulario">
+            <h2>Dados pessoais:</h2>
+            <div class="linha">
+                <label for="nome">Nome completo*:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="linha">
+                <label for="age">Idade*:</label>
+                <input type="number" id="age" name="age" required min="18" max="200">
+            </div>
+            <div class="linha">
+                <label for="email">Email*:</label>
+                <input type="email" name="email" id="email" required placeholder="exemplo@gmail.com">
+            </div>
+            <div class="linha">
+                <label for="tel">Telefone:</label>
+                <input type="tel" name="tel" id="tel" value="0000000000">
+            </div>
+            <div class="linha">
+                <label for="url">URL:</label>
+                <input type="url" name="url" id="url" value="https://www.example.com">
+            </div>
+            <div class="linha">
+                <label for="pass">Senha*:</label>
+                <input type="password" name="pass" id="pass" required>
+            </div>
+            <div class="linha">
+                <label>Gênero:</label>
+                <input id="genero_f" type="radio" name="genero" value="F" checked>
+                <label for="genero_f">F</label>
+                <input id="genero_m" type="radio" name="genero" value="M">
+                <label for="genero_m">M</label>
+            </div>
+            <div class="linha">
+                <label for="nacionalidade">Nacionalidade:</label>
+                <select name="nacionalidade" id="nacionalidade" required multiple>
+                    <option value="pt">Português</option>
+                    <option value="fr">Francês</option>
+                    <option value="de">Alemão</option>
+                    <option value="alien">Alien</option>
+                </select>
+            </div>
+            <div class="linha">
+                <label for="morada">Morada*:</label>
+                <textarea name="morada" id="morada" cols="30" rows="5" required></textarea>
+            </div>
+            <h2>Outros dados pessoais:</h2>
+            <div class="linha">
+                <label for="color">Cor do fato que prefere para voo: </label>
+                <input type="color" name="color" id="color" value="#FF00EE">
+            </div>
+            <div class="linha">
+                <label>Professor Favorito:</label>
+                <input type="checkbox" id="professor_a" name="letras[]" value="Professor Nuno Gil">
+                <label for="professor_a">Professor Nuno Gil</label>
+                <input type="checkbox" id="professor_b" name="letras[]" value="Professor Frederic Bogaerts">
+                <label for="professor_b">Professor Frederic Bogaerts</label>
+                <input type="checkbox" id="professor_c" name="letras[]" value="Outro">
+                <label for="professor_c">Outro</label>
+            </div>
+            <div class="linha">
+                <label for="tempoestuda">Seu nivel de excitacao:</label>
+                <input type="range" name="tempoestuda" id="tempoestuda" min="0" max="24">
+            </div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </div>
+
+    <div class="logo-container">
+        <a href="https://www.fai.org/" target="_blank">
+            <img src="imgs/fai-logo.png" alt="Organization 1">
+        </a>
+        <a href="http://www.ehpu.org/" target="_blank">
+            <img src="imgs/EHPU_logo.png" alt="Organization 2">
+        </a>
+        <a href="https://www.wada-ama.org/en" target="_blank">
+            <img src="imgs/WADA_logo.png" alt="Organization 3">
+        </a>
+        <a href="https://ipdj.gov.pt/" target="_blank">
+            <img src="imgs/ipdj-logo.png" alt="Organization 4">
+        </a>
+        <img src="imgs/PNED_logo.png" alt="Organization 5">
+        <img src="imgs/CDP_logo.png" alt="Organization 6">
+    </div>
+
+    <a href="#" class="back-to-top">Back to Top</a>
+
+
+    <footer id="art_footer">
+        CopyLeft &copy; 2024 &nbsp; Desenvolvido por Kinga Brynczka <br>
+        Mail me: <a href="mailto:nuncaterindas99@gmail.com">nuncaterindas99@gmail.com</a>
+    </footer>
+
+
+</body>
+</html>
